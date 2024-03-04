@@ -1,0 +1,272 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  cursor: url("images/cursor.png"), auto;
+}
+
+a {
+  cursor: url("images/cursor.png"), auto;
+}
+
+.header {
+  background-color: #44d9e4;
+  padding: 8px;
+  /* Tamaño de padding reducido */
+  display: flex;
+}
+
+.header img {
+  max-height: 80px;
+  /* Establece la altura máxima del logo y el carrito */
+  margin-left: 550px;
+  /* Ajusta la distancia horizontal entre el logo y el carrito */
+}
+
+.header a img {
+  max-height: 80px;
+  /* Establece la altura del carrito igual a la altura del logo */
+  margin-left: 200px;
+  margin-right: 20px;
+}
+
+.section-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* Crea tres columnas de igual tamaño */
+  gap: 20px;
+  /* Espacio entre las secciones */
+  margin-top: 20px;
+}
+
+.section {
+  text-align: center;
+  font-family: Oswald;
+}
+
+/* Añadir fondo amarillo claro al texto en la sección 1 */
+.titlesection {
+  background-color: #ffffcc;
+  /* Fondo amarillo claro */
+  padding: 10px;
+  /* Añadir espacio alrededor del texto */
+  border-radius: 5px;
+  /* Agregar bordes redondeados al rectángulo */
+  text-align: center;
+  font-family: "Nova Square", sans-serif;
+}
+
+.section img {
+  max-width: 100%;
+}
+
+.product {
+  margin: 10px;
+  text-align: center;
+  /* Centra el texto dentro de cada producto */
+}
+
+.product img {
+  width: 150px;
+  height: 150px;
+  display: block;
+  /* Centra la imagen dentro de su contenedor */
+  margin: 0 auto;
+  /* Centra la imagen horizontalmente */
+}
+
+.button-container {
+  margin-top: 10px;
+}
+
+.button-container button {
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px;
+  background-color: #eeee3b;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+}
+
+.help-page {
+  text-align: center;
+  padding: 20px;
+}
+
+.help-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.help-box {
+  background-color: #f0f040;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.help-box h2 {
+  color: #333;
+}
+
+.help-box p {
+  color: #666;
+}
+
+.tituloayuda {
+  background-color: #44d9e4;
+  padding: 1px;
+  border-radius: 5px;
+  font-family: "Nova Square", sans-serif;
+}
+
+.product-page {
+  text-align: center;
+  padding: 20px;
+}
+
+.product-header img {
+  max-width: 100%;
+  width: 300px;
+  display: block;
+  margin: 0 auto;
+}
+
+.product-details {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.product-info {
+  background-color: #ffffcc;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.product-info h2 {
+  color: #333;
+}
+
+.product-info p {
+  color: #666;
+}
+
+.login-container {
+  text-align: center;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 1330px;
+  background-color: #44d9e4;
+}
+
+h1 {
+  color: #333;
+}
+
+.input-container {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.back-button {
+  display: inline-block;
+  padding: 10px;
+  background-color: #f2f2f2;
+  text-decoration: none;
+  color: #333;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.back-button:hover {
+  background-color: #ddd;
+}
+
+.ayuda {
+  margin-right: 2px;
+}
+
+.tresbarras {
+  margin-left: -530px;
+}
+
+.video video {
+  display: block;
+  margin: 0 auto;
+}
+
+#chaqueta {
+  transform: rotateY(0deg);
+  transition: transform 1000ms;
+}
+
+#chaqueta:hover {
+  transform: rotateY(180deg);
+}
+
+#monitor {
+  transform: rotateY(0deg);
+  transition: transform 1000ms;
+}
+
+#monitor:hover {
+  transform: rotateY(180deg);
+}
+
+#camisetas {
+  transform: rotateY(0deg);
+  transition: transform 1000ms;
+}
+
+#camisetas:hover {
+  transform: rotateY(180deg);
+}
+
+#camiseta {
+  transform: rotateX(0deg);
+  transition: transform 1000ms;
+}
+
+#camiseta:hover {
+  transform: rotateX(180deg);
+}
+
+.section-grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+  padding: 50px;
+  justify-content: center;
+  grid-template-rows: auto 100px;
+}
+
+.item3 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  justify-content: center;
+  margin-top: 40px;
+  border-bottom: 30px;
+}
